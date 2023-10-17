@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".results.CompleteAnalysis">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="13dp"
+        android:gravity="center"
+        android:paddingVertical="7dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/back"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/transparent"/>
+        <Space
+            android:layout_width="14dp"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Analysis"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/black"
+                android:includeFontPadding="false"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/java"
+            android:orientation="vertical">
+
+            <include layout="@layout/resulr_page_health_score3"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="28dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clinical"
+                    android:textSize="12sp"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/grey"/>
+                <include layout="@layout/result_page_diabetes"/>
+                <include layout="@layout/result_page_vital"/>
+                <include layout="@layout/result_page_blow"/>
+                <include layout="@layout/result_page_liver"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="28dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lifestyle"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/grey"/>
+
+                <LinearLayout
+                    android:id="@+id/card_life_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <include layout="@layout/result_page_lifestyle_score"/>
+                </LinearLayout>
+                <include layout="@layout/result_page_nutrition_analysis"/>
+
+            </LinearLayout>
+            <include layout="@layout/food_suggestion_based_on_time"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

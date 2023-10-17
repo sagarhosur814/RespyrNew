@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    tools:context=".trends.Trends">
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/trends_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        app:tabTextAppearance="@style/TabTextStyle"
+        app:tl_textSelectColor="@color/white"
+        app:tabTextColor="@color/grey"
+        app:tabSelectedTextColor="@color/white"
+        app:tabMode="scrollable"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation_layout" />
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.aries.ui.view.tab.CommonTabLayout
+            android:id="@+id/table_layout_home"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_52sdp"
+            android:background="@drawable/border_1dp"
+            android:theme="@style/MulishFont"
+            app:tl_indicator_corner_radius="5dp"
+            app:tl_textSelectColor="@color/primary"
+            app:tl_textUnSelectColor="@color/grey"
+            tl:tl_iconGravity="TOP"
+            tl:tl_iconHeight="30dp"
+            tl:tl_iconWidth="30dp"
+            tl:tl_indicator_anim_enable="false"
+            tl:tl_indicator_bounce_enable="true"
+            tl:tl_indicator_color="@color/primary"
+            tl:tl_indicator_gravity="TOP"
+            tl:tl_indicator_height="0dp"
+            tl:tl_indicator_width="56dp"
+            tl:tl_textSize="@dimen/_9ssp" />
+    </LinearLayout>
+</LinearLayout>

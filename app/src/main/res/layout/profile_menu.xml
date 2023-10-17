@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="25dp"
+    android:paddingHorizontal="5dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCOUNT"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="11sp"
+        android:textAllCaps="true"
+        android:includeFontPadding="false"
+        android:textColor="@color/primary"/>
+
+    <LinearLayout
+        android:id="@+id/ll_profile_main_menu_1"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:foreground="@drawable/ripple_1"
+        android:background="@drawable/rectangle_rad10"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/dashboard_sm"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="15dp"
+                android:fontFamily="@font/mulish"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black"
+                android:text="Dashboard"
+                tools:ignore="PrivateResource" />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow_right1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_profile_main_menu_2"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/trends_sm"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/mulish"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/black"
+            android:text="Trends"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow_right1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_profile_main_menu_4"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/profile_sm"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/mulish"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/black"
+            android:text="Profile Settings"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow_right1"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SETTINGS"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="11sp"
+        android:textAllCaps="true"
+        android:includeFontPadding="false"
+        android:layout_marginTop="27dp"
+        android:textColor="@color/primary"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_profile_main_menu_3"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/settings_sm"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/mulish"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/black"
+            android:text="Account Settings"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow_right1"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_profile_main_menu_5"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/info_sm2"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/mulish"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/black"
+            android:text="Help Center"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow_right1"/>
+    </LinearLayout>
+</LinearLayout>

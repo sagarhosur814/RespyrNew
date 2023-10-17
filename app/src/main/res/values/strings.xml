@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Respyr App</string>
+    <string name="terms_and_conditions"><u>Terms and Conditions</u></string>
+    <string name="tap_here"><u>Tap Here</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+
+    <string name="todo">TODO</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="bmi">BMI</string>
+    <string name="medical_history">Medical History</string>
+    <string name="this_is_used_to_get_accurate_health_status">This is used to get accurate health status</string>
+
+
+    <!-- //// radio button options-->
+    <string name="never">Never</string>
+    <string name="occasionally">Occasionally</string>
+    <string name="regularly">Regularly</string>
+    <string name="lightly">Lightly</string>
+    <string name="moderately">Moderately</string>
+    <string name="actively">Actively</string>
+    <string name="very_actively">Very actively</string>
+    <string name="view_trend">View Trend</string>
+
+
+    <string name="water_intake">Water Intake</string>
+    <string name="smoking">Smoking</string>
+    <string name="alcohol">Alcohol</string>
+
+
+    // score categories
+    <string name="lifestyle">LifeStyle</string>
+    <string name="clinical">CLINICAL</string>
+
+    /// scores
+    <string name="diabetes_score">Diabetes Score</string>
+    <string name="vital_score">Vital Score</string>
+    <string name="respiratory_score">Respiratory Score</string>
+    <string name="activity_score">Activity Score</string>
+    <string name="nutrition_score">Nutrition Score</string>
+    <string name="liver_score">Liver Score</string>
+
+
+    <string name="suggestions">SUGGESTIONS</string>
+    <string name="blow_within_str"><![CDATA[Blow gently & continuously into\nthe device]]></string>
+    <string name="avg_score_daily">Avg. Score (Daily)</string>
+    <string name="check_list_warning">If you continue anyway, You can still take test and view result, But won’t be saved in profile</string>
+    <string name="build_your_health_profile">Build Your Health Profile</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_email_1">Enter your email (Optional) </string>
+
+
+    <string name="heading_one">A breath is all it takes</string>
+    <string name="heading_two">Track it. Better it.</string>
+    <string name="heading_three">Four-in-One</string>
+
+    //Description
+    <string name="desc_one">
+        Breath based technology to simplify \n health and lifestyle tracking
+    </string>
+    <string name="desc_two">
+        Track multiple health and lifestyle parameters,\nreceive personalized suggestions
+    </string>
+    <string name="desc_three">
+        Add upto four profiles in one account,\ngreat for you and your loved ones
+    </string>
+    <string name="sleep_trend_description">See your weekly trend of your exercise here. For an accurate analysis, track everyday.</string>
+
+</resources>

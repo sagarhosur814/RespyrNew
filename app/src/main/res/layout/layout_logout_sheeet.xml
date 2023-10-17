@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    android:gravity="center"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:ignore="PrivateResource">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rectange_rad15"
+        android:backgroundTint="@color/white"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logout"/>
+
+            <ImageView
+                android:id="@+id/img_logout_box_profile_av"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/eclips1"
+                android:backgroundTint="@color/profile2"
+                android:src="@drawable/profile_av1" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_logout_box_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:maxWidth="228dp"
+            android:text="Logout from Shubham’s account"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:layout_marginTop="28dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish"
+            android:text="This will logout from all profiles\nconnected to your account."
+            android:textColor="#535359"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxWidth="228dp"
+            android:includeFontPadding="false"
+            android:layout_marginTop="28dp"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="23dp"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_do_not_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:maxHeight="40dp"
+                android:text="Cancel"
+                android:textSize="15sp"
+                android:background="#0000"
+                android:textAllCaps="false"
+                android:fontFamily="@font/mulish_semibold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="0dp"/>
+            <Button
+                android:id="@+id/button_yes_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:maxHeight="40dp"
+                android:text="Logout"
+                android:textSize="15sp"
+                android:background="#0000"
+                android:backgroundTint="@color/red"
+                android:textAllCaps="false"
+                android:fontFamily="@font/mulish_semibold"
+                android:textColor="@color/red"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

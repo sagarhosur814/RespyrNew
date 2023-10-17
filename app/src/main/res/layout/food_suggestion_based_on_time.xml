@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EFDBFF"
+    android:orientation="vertical"
+    android:id="@+id/suggestion_layout"
+    android:paddingHorizontal="5dp"
+    android:paddingVertical="30dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUGGESTIONS"
+        android:textSize="@dimen/_10ssp"
+        android:textAllCaps="true"
+        android:paddingHorizontal="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:includeFontPadding="false"
+        android:textColor="#927CFF"/>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="25dp"
+            android:src="@drawable/shape_chat"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/chat_message_bg"
+            android:backgroundTint="@color/white"
+            android:paddingVertical="5dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_meal_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18ssp"
+                android:paddingVertical="13dp"
+                android:background="@drawable/rectangle_rad10"
+                android:paddingHorizontal="10dp"
+                android:backgroundTint="#F4F2FE"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textColor="#3B258D"/>
+            <TextView
+                android:id="@+id/txt_time_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:58 am"
+                android:textSize="@dimen/_8ssp"
+                android:layout_gravity="end"
+                android:layout_marginTop="9dp"
+                android:fontFamily="@font/roboto"
+                android:includeFontPadding="false"
+                android:textColor="#3B258D"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="25dp"
+            android:src="@drawable/shape_chat"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/chat_message_bg"
+            android:backgroundTint="@color/white"
+            android:paddingVertical="5dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here are some suggestions for your ultimate meal based on your clinical, lifestyle and BMI scores"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/mulish"
+                android:includeFontPadding="false"
+                android:textColor="#3B258D"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/food_suggestion_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"/>
+
+            <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                app:spi_dotColor="@color/disabled"
+                app:spi_dotSelectedColor="#3B258D"   />
+
+
+            <TextView
+                android:id="@+id/txt_time_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:58 am"
+                android:textSize="10sp"
+                android:layout_gravity="end"
+                android:layout_marginTop="9dp"
+                android:fontFamily="@font/roboto"
+                android:includeFontPadding="false"
+                android:textColor="#3B258D"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="25dp"
+            android:src="@drawable/shape_chat"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/chat_message_bg"
+            android:backgroundTint="@color/white"
+            android:paddingVertical="5dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need more like this. Press below"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/mulish"
+                android:includeFontPadding="false"
+                android:textColor="#3B258D"/>
+
+            <Button
+                android:id="@+id/button_view_all_suggestion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/rectangle_rad10"
+                android:backgroundTint="#927CFF"
+                android:drawableEnd="@drawable/link"
+                android:fontFamily="@font/mulish"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="24dp"
+                android:text="VIEW ALL SUGGESTIONS"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                tools:ignore="SmallSp" />
+            <TextView
+                android:id="@+id/txt_time_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:58 am"
+                android:textSize="@dimen/_8ssp"
+                android:layout_gravity="end"
+                android:layout_marginTop="9dp"
+                android:fontFamily="@font/roboto"
+                android:includeFontPadding="false"
+                android:textColor="#3B258D"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

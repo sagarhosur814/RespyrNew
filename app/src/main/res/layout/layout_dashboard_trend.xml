@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:ignore="WebViewLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"
+            android:text="Health Trend"
+            tools:ignore="PrivateResource" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_growth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_25ssp"
+                    android:text="0%"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulish"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="#A1A1A1"
+                    android:includeFontPadding="false"
+                    android:text="Than previous"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="43dp"
+                android:layout_height="0dp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_growth_in_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="@dimen/_25ssp"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulish"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="#A1A1A1"
+                    android:includeFontPadding="false"
+                    android:text="Average Score (Daily)"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:paddingHorizontal="10dp">
+        <WebView
+            android:id="@+id/chartWebView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"/>
+    </LinearLayout>
+</LinearLayout>

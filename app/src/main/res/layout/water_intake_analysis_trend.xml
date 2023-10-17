@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="47dp"
+    android:paddingHorizontal="20dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="start|center"
+            android:includeFontPadding="false"
+            android:text="Water Intake"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp"/>
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/water1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See your weekly trend of your water intake here. For an accurate analysis, track everyday."
+        android:textSize="12sp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/mulish"
+        android:includeFontPadding="false"
+        android:textColor="@color/grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:backgroundTint="@color/light_secondary"
+        android:background="@drawable/rectangle_rad10"
+        android:paddingVertical="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_header_data_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5%"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/roboto_medium"
+                    app:drawableTint="@color/green"
+                    android:drawablePadding="5dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/black"
+                    app:drawableRightCompat="@drawable/data_up" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Than yesterday"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/mulish"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/grey"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="0dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_avg_daily_intake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6 glasses "
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/black"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="0dp"/>
+                    <TextView
+                        android:id="@+id/txt_avg_daily_intake_ltr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/roboto"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Average water intake\n(Daily)"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/mulish"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/grey"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginTop="53dp"
+            android:paddingHorizontal="5dp">
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/waterIntakeChart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/analyse_progress1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:indicatorSize="24dp"
+                    app:trackColor="#E0E0E0"
+                    android:visibility="gone"
+                    app:trackThickness="2dp"
+                    android:layout_centerInParent="true"
+                    app:indicatorColor="#535359"
+                    android:indeterminate="true" />
+
+                <ImageView
+                    android:id="@+id/analyse_image1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/uncheck_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/analyse_view1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="3dp"
+        android:background="@drawable/eclips1"
+        android:backgroundTint="#E0E0E0"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/analyse_progress2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:indicatorSize="24dp"
+                    app:trackColor="#E0E0E0"
+                    android:visibility="gone"
+                    app:trackThickness="2dp"
+                    android:layout_centerInParent="true"
+                    app:indicatorColor="#535359"
+                    android:indeterminate="true" />
+
+                <ImageView
+                    android:id="@+id/analyse_image2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/uncheck_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/analyse_view2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="3dp"
+        android:background="@drawable/eclips1"
+        android:backgroundTint="#E0E0E0"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/analyse_progress3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:indicatorSize="24dp"
+                    app:trackColor="#E0E0E0"
+                    android:visibility="gone"
+                    app:trackThickness="2dp"
+                    android:layout_centerInParent="true"
+                    app:indicatorColor="#535359"
+                    android:indeterminate="true" />
+
+                <ImageView
+                    android:id="@+id/analyse_image3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/uncheck_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/analyse_view3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="3dp"
+        android:background="@drawable/eclips1"
+        android:backgroundTint="#E0E0E0"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/analyse_progress4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:indicatorSize="24dp"
+                    app:trackColor="#E0E0E0"
+                    android:visibility="gone"
+                    app:trackThickness="2dp"
+                    android:layout_centerInParent="true"
+                    app:indicatorColor="#535359"
+                    android:indeterminate="true" />
+
+                <ImageView
+                    android:id="@+id/analyse_image4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/uncheck_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/analyse_view4"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="3dp"
+        android:background="@drawable/eclips1"
+        android:backgroundTint="#E0E0E0"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/analyse_progress5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:indicatorSize="24dp"
+                    app:trackColor="#E0E0E0"
+                    android:visibility="gone"
+                    app:trackThickness="2dp"
+                    android:layout_centerInParent="true"
+                    app:indicatorColor="#535359"
+                    android:indeterminate="true" />
+
+                <ImageView
+                    android:id="@+id/analyse_image5"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/uncheck_progress" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

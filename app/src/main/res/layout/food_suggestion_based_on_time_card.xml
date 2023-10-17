@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:elevation="2dp"
+    android:minHeight="81dp"
+    android:maxWidth="205dp"
+    android:layout_marginEnd="10dp"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:background="@drawable/food_card_bg_1"
+        android:paddingVertical="18dp"
+        android:paddingHorizontal="11dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/food_image_not_found"/>
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_food_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txt_calories_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/roboto"
+                android:includeFontPadding="false"
+                android:textColor="#A1A1A1"
+                app:drawableStartCompat="@drawable/fire_sm" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

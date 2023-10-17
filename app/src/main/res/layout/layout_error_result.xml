@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="start|center"
+    android:id="@+id/layout_error"
+    android:paddingHorizontal="20dp"
+    android:background="@color/white"
+    android:paddingVertical="33dp">
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="124dp"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/generate_report_failed"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oops!\nError Occurred While Generating Report"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:maxWidth="240dp"
+        android:layout_marginTop="50dp"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rectangle_rad10"
+        android:backgroundTint="#F0F0F0"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Error Code"
+                android:fontFamily="@font/mulish"
+                android:textSize="10sp"
+                android:textColor="#535359"
+                android:maxWidth="240dp"
+                android:includeFontPadding="false"/>
+            <TextView
+                android:id="@+id/txt_error_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESPRROR42"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:textSize="15sp"
+                android:textColor="#535359"
+                android:maxWidth="240dp"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/button_copy_error_code"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@color/transparent"
+            android:src="@drawable/copy"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp">
+        <TextView
+            android:id="@+id/txt_help_center"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:maxWidth="240dp"
+            android:includeFontPadding="false"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/button_try_later"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_rad10"
+        android:text="Try Later"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:fontFamily="@font/mulish"
+        android:textColor="@color/white"
+        android:minWidth="159dp"
+        android:textSize="15sp"
+        android:backgroundTint="@color/primary"/>
+    <TextView
+        android:id="@+id/txt_need_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mulish"
+        android:textSize="15sp"
+        android:textColor="@color/primary"
+        android:maxWidth="240dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:includeFontPadding="false"/>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginTop="23dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="@dimen/_10sdp"
+    android:orientation="vertical">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pages_banners"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="92dp"/>
+    <com.afollestad.viewpagerdots.DotsIndicator
+        android:id="@+id/dots"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        app:dot_drawable="@drawable/indicator_active"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:dot_drawable_unselected ="@drawable/indicator_inactive"
+        app:dot_width="5dp"
+        app:dot_height="5dp"
+        />
+</RelativeLayout>

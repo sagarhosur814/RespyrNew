@@ -1,0 +1,16 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected tab background with rounded corners -->
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="@color/white" />
+            <corners android:radius="25dp" /> <!-- Adjust the radius as needed -->
+        </shape>
+    </item>
+
+    <!-- Unselected tab background -->
+    <item android:state_selected="false">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</selector>

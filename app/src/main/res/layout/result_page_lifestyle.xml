@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:paddingHorizontal="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="#D9D9D9"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lifestyle"
+            android:textAllCaps="true"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#535359"
+            android:includeFontPadding="false"
+            />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="#D9D9D9"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/card_nutrition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="start|center">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp"
+                        android:src="@drawable/cereal"
+                        android:padding="5dp"
+                        android:background="@drawable/rectangle_rad10"
+                        android:backgroundTint="@color/white"/>
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nutrition\nScore"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/_9sdp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/black"
+                        android:includeFontPadding="false"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start|top">
+
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txt_nutrition_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0%"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textColor="#EA5455"
+                            android:includeFontPadding="false"
+                            />
+                        <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                            android:id="@+id/progress_nutrition"
+                            android:layout_width="35dp"
+                            android:layout_height="5dp"
+                            app:rpbBackgroundColor="@color/disabled"
+                            app:rpbBackgroundTextColor="#0000"
+                            app:rpbCornerRadius="20dp"
+                            app:rpbProgressColor="#EA5455"
+                            app:rpbProgressTextColor="#0000"
+                            app:rpbTextPadding="12dp"
+                            android:layout_marginTop="10dp"
+                            app:rpbProgress="50"
+                            app:rpbTextSize="0dp" />
+                    </LinearLayout>
+
+
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txt_nutrition_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Good!"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_9sdp"
+                            android:fontFamily="@font/mulish_bold"
+                            android:textColor="#EA5455"
+                            android:includeFontPadding="false"
+                            tools:ignore="SmallSp" />
+                        <TextView
+                            android:id="@+id/txt_nutrition_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Focus on food!"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_7sdp"
+                            android:layout_marginTop="3dp"
+                            tools:ignore="SmallSp"
+                            android:fontFamily="@font/mulish_semibold"
+                            android:textColor="@color/darK_grey"
+                            android:includeFontPadding="false"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:id="@+id/card_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="start|center">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp"
+                        android:src="@drawable/running1"
+                        android:padding="5dp"
+                        android:background="@drawable/rectangle_rad10"
+                        android:backgroundTint="@color/white"/>
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:includeFontPadding="false"
+                        android:text="Activity\nScore"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start|top">
+
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txt_activity_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0%"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textColor="#EA5455"
+                            android:includeFontPadding="false"
+                            />
+                        <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                            android:id="@+id/progress_activity"
+                            android:layout_width="35dp"
+                            android:layout_height="5dp"
+                            app:rpbBackgroundColor="@color/disabled"
+                            app:rpbBackgroundTextColor="#0000"
+                            app:rpbCornerRadius="20dp"
+                            app:rpbProgressColor="#EA5455"
+                            app:rpbProgressTextColor="#0000"
+                            app:rpbTextPadding="12dp"
+                            android:layout_marginTop="10dp"
+                            app:rpbProgress="50"
+                            app:rpbTextSize="0dp" />
+                    </LinearLayout>
+
+
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txt_activity_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Good!"
+                            android:textAllCaps="false"
+                            tools:ignore="SmallSp"
+                            android:textSize="@dimen/_9sdp"
+                            android:fontFamily="@font/mulish_bold"
+                            android:textColor="#EA5455"
+                            android:includeFontPadding="false"
+                            />
+                        <TextView
+                            android:id="@+id/txt_activity_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Focus on food!"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/_7sdp"
+                            android:layout_marginTop="3dp"
+                            tools:ignore="SmallSp"
+                            android:fontFamily="@font/mulish_semibold"
+                            android:textColor="@color/darK_grey"
+                            android:includeFontPadding="false"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

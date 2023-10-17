@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:paddingHorizontal="@dimen/_13sdp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectange_rad15"
+        android:backgroundTint="#E4F0FF"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:gravity="start|center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_30sdp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diabetes_score"
+                    android:textSize="@dimen/_18sdp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:src="@drawable/pancreas"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diabetes score is function of breath markers developed in comparison with gold standard clinical markers.For an accurate analysis, track regularly."
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/mulish"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="17dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Risk Level"
+                    android:textSize="15sp"
+                    android:layout_marginTop="48dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/grey"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="75"
+                        android:textSize="75dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/black"/>
+                    <Space
+                        android:layout_width="15dp"
+                        android:layout_height="0dp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="out of 100"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/roboto"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/grey"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/happy_face"
+                        android:layout_marginBottom="15dp"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_progress_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Low Risk"
+                        android:textSize="12sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:elevation="2dp"
+                        android:paddingHorizontal="16dp"
+                        android:fontFamily="@font/mulish"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/black"/>
+
+                    <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                        android:id="@+id/diabetic_progress_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_centerInParent="true"
+                        app:rpbBackgroundColor="#F0F0F0"
+                        app:rpbCornerRadius="10dp"
+                        app:rpbProgressColor="@color/green"
+                        app:rpbShowProgressText="false" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:gravity="start">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_diabetic_score_profile_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_13sdp"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/black"
+                        android:text="Shubham,\nYou're Vital Score is"
+                        android:fontFamily="@font/mulish"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_diabetic_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:includeFontPadding="false"
+                            android:text="85%"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_32sdp" />
+                        <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                            android:id="@+id/progress_diabetic_score"
+                            android:layout_width="98dp"
+                            android:layout_height="15dp"
+                            app:rpbBackgroundColor="#F0F0F0"
+                            app:rpbBackgroundTextColor="#0000"
+                            app:rpbCornerRadius="@dimen/_20sdp"
+                            app:rpbProgressColor="#EA5455"
+                            app:rpbProgressTextColor="#0000"
+                            app:rpbTextPadding="12dp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            app:rpbProgress="50"
+                            app:rpbTextSize="0dp" />
+                    </LinearLayout>
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/txt_vital_score_message"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="which is good based on your recommended intake"
+                        android:fontFamily="@font/mulish"
+                        android:textColor="@color/grey"
+                        android:visibility="gone"
+                        android:drawableTint="@color/grey"
+                        android:includeFontPadding="false"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="287dp"
+            android:layout_margin="1dp"
+            android:minHeight="287dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:elevation="1dp"
+                android:paddingHorizontal="20dp">
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/eclips1"
+                    android:gravity="center"
+                    android:backgroundTint="@color/white">
+                    <ImageView
+                        android:id="@+id/img_diabetic_warning"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/diabetic_badge"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/button_view_trend_diabetic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:drawableEnd="@drawable/arrow_right1"
+                    android:fontFamily="@font/mulish"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/eclips1"
+                    android:backgroundTint="@color/primary"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:text="@string/view_trend"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="247dp"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="25dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/rectange_rad15"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txt_diabetic_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_15sdp"
+                        android:includeFontPadding="false"
+                        android:text="You are on fire, Shubham!"
+                        android:gravity="start|center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_semibold"/>
+                    <TextView
+                        android:id="@+id/txt_diabetic_sub_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_8sdp"
+                        android:includeFontPadding="false"
+                        android:text="Your activity level is exceedingly well. Don’t stop now. Keep at it to enhance your health score."
+                        android:gravity="start|center"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/mulish"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/button_diabetic_track_life_style"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/_40sdp"
+                        android:backgroundTint="@color/black"
+                        android:text="Track Your Lifestyle"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/mulish"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:drawableRight="@drawable/arrow_right1"
+                        android:drawableTint="@color/white"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:background="@drawable/eclips1"/>
+
+                    <Space
+                        android:layout_width="31dp"
+                        android:layout_height="0dp"/>
+
+                    <ImageButton
+                        android:id="@+id/button_share_diabetic"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/share"
+                        android:foreground="@drawable/ripple_1"
+                        android:background="@drawable/eclips1"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        
+    </LinearLayout>
+</LinearLayout>

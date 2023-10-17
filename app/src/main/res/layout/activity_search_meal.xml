@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".daily_routine.SearchMeal">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="19dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/button_back"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/toolbar_back"
+                    android:background="@color/transparent"/>
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/txt_appbar_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Add Meal"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/black"
+                    tools:ignore="PrivateResource" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingHorizontal="13dp"
+           android:paddingVertical="20dp">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_40sdp"
+               android:background="@drawable/eclips1"
+               android:gravity="center"
+               android:paddingHorizontal="@dimen/_20sdp"
+               android:backgroundTint="#F0F0F0">
+
+               <ImageView
+                   android:layout_width="@dimen/_16sdp"
+                   android:layout_height="@dimen/_16sdp"
+                   android:src="@drawable/search"/>
+               <EditText
+                   android:id="@+id/search_food_edit_text"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:paddingVertical="13dp"
+                   android:paddingHorizontal="13sp"
+                   android:fontFamily="@font/poppins_semibold"
+                   android:textSize="@dimen/_10sdp"
+                   android:hint="What did you eat?"
+                   android:textColorHighlight="#C7C6CE"
+                   android:textColor="@color/black"
+                   android:includeFontPadding="false"
+                   android:background="@color/transparent"/>
+               <ImageButton
+                   android:id="@+id/button_clear_edit_text"
+                   android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:visibility="gone"
+                   android:background="@color/transparent"
+                   android:src="@drawable/close"
+                   app:tint="@color/black" />
+           </LinearLayout>
+       </LinearLayout>
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingHorizontal="13dp"
+                   android:orientation="vertical">
+                   <include layout="@layout/search_food_layout"/>
+                   <include layout="@layout/added_food_layout"/>
+                   <include layout="@layout/frequently_added_food_layout"/>
+                   <include layout="@layout/food_catogories_layout"/>
+               </LinearLayout>
+       </androidx.core.widget.NestedScrollView>
+   </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/primary">
+        <TextView
+            android:id="@+id/txt_data_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add meals (1)"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/mulish"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

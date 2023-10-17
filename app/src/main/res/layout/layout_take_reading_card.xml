@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="14dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/take_reading_card_bg"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="11dp"
+        android:paddingVertical="@dimen/_20sdp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:text="You haven’t taken your reading today."
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_20sdp" />
+
+        <Button
+            android:id="@+id/button_start_test_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="@dimen/_30sdp"
+            android:text="Track Your Health"
+            android:background="@drawable/eclips1"
+            android:backgroundTint="@color/primary"
+            android:paddingHorizontal="21dp"
+            android:drawableEnd="@drawable/right1"
+            android:drawableTint="@color/white"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/mulish"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="38dp"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Before your test make sure you"
+            android:fontFamily="@font/mulish_semibold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="28dp"
+            android:includeFontPadding="false"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/checklist_list"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+            <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:spi_dotColor="@color/disabled"
+                app:spi_dotSelectedColor="@color/primary"   />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

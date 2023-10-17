@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:background="@color/white"
+    tools:context=".daily_routine.ConfirmReading">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_layout"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_log"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/_25sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_above="@id/button_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Before that, lets track your daily routine in the past 24 hours"
+                    android:textSize="@dimen/_18ssp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:includeFontPadding="false"
+                    android:maxWidth="285dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"/>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="74dp"
+                    android:src="@drawable/lifestyle_illustration2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This will help in improving accuracy of your activity score along with overall health score"
+                    android:textSize="@dimen/_10ssp"
+                    android:fontFamily="@font/mulish"
+                    android:includeFontPadding="false"
+                    android:maxWidth="285dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="70dp"
+                    android:textColor="@color/darK_grey"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:paddingHorizontal="24dp"
+                android:layout_marginTop="99dp"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/eclips1"
+                    android:backgroundTint="@color/darK_grey"
+                    android:padding="1px"
+                    android:layout_height="@dimen/_40sdp">
+                    <Button
+                        android:id="@+id/button_track_later"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/eclips1"
+                        android:text="I’ll Track Later "
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/darK_grey"
+                        android:fontFamily="@font/mulish"
+                        android:textAllCaps="false"
+                        android:backgroundTint="@color/white"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="1px"
+                    android:background="@drawable/eclips1"
+                    android:backgroundTint="@color/primary"
+                    android:layout_height="@dimen/_40sdp">
+                    <Button
+                        android:id="@+id/button_continue"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/eclips1"
+                        android:text="Continue"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/mulish"
+                        android:textAllCaps="false"
+                        android:backgroundTint="@color/primary"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <include
+            android:visibility="gone"
+            layout="@layout/daily_nutrition"/>
+
+    </LinearLayout>
+</ScrollView>

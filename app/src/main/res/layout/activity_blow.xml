@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".reading.BlowActivity">
+
+
+<!--    /////////////////////// appbar /////////////////////////-->
+
+    <include layout="@layout/reading_appbar"/>
+
+
+<!--   ////////////////////////////////// start test layout -->
+<!--    **************************************************************-->
+
+    <LinearLayout
+        android:id="@+id/layout_start_test"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible"
+        android:background="#2365B5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/start_test_bg"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_start_test"
+                android:layout_width="290dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:minWidth="290dp"
+                android:background="@drawable/button_start_test"
+                android:minHeight="290dp"
+                android:layout_marginBottom="70dp"
+                android:layout_height="290dp"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:paddingVertical="25dp"
+                    android:gravity="center|bottom"
+                    android:orientation="vertical"
+                    android:background="@drawable/device_ready">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="17dp"
+                        android:text="Device is ready!"
+                        android:lineSpacingExtra="-6sp"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_semibold"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+<!--    /////////////////////////// setting up environment layout-->
+<!-- **********************************************************************-->
+
+    <LinearLayout
+        android:id="@+id/setting_environment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_340sdp">
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_340sdp"
+                android:minHeight="@dimen/_340sdp"
+                android:src="@drawable/setting_env" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="131dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/device"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/setting_environment_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Adjusting to environment..."
+            android:textColor="@color/darK_grey"
+            android:layout_marginTop="50dp"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+
+<!--    /////////////////////////////////////////////// Take a breath layout-->
+    <RelativeLayout
+        android:id="@+id/layout_take_deep_breath"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="44dp"
+        android:paddingBottom="72dp"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Breath Test"
+                android:textColor="@color/black"
+                android:includeFontPadding="false"
+                android:layout_gravity="center"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/image_swipe_up"
+                android:layout_width="match_parent"
+                android:layout_height="323dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/inhale" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true">
+                    <TextView
+                        android:id="@+id/txtTakeDeepBreath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Take A Deep Breath in"
+                        android:textColor="@color/darK_grey"
+                        android:includeFontPadding="false"
+                        android:maxWidth="128dp"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_auto_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto"
+            android:includeFontPadding="false"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+
+<!--    ////////////////////////////////////////////////////Blow Layouut-->
+<!--    ***********************************************************************-->
+    <RelativeLayout
+        android:id="@+id/layout_blow_now"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="44dp"
+        android:paddingBottom="72dp"
+        android:visibility="gone">
+
+        <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/poppins_semibold"
+                  android:text="Blow Now"
+                  android:textColor="@color/black"
+                  android:includeFontPadding="false"
+                  android:layout_gravity="center"
+                  android:textSize="25dp" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/mulish"
+                  android:text="Blow with full capacity into\nthe mouth tube"
+                  android:textColor="@color/darK_grey"
+                  android:layout_gravity="center"
+                  android:textAlignment="center"
+                  android:includeFontPadding="false"
+                  android:layout_marginTop="12dp"
+                  android:textSize="15sp" />
+          </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="437dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="268dp"
+                android:layout_height="268dp"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:elevation="2dp"
+                android:src="@drawable/blow_now"/>
+
+            <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                android:id="@+id/progress_blow"
+                android:layout_width="189dp"
+                android:layout_height="30dp"
+                app:rpbBackgroundColor="@color/disabled"
+                app:rpbBackgroundTextColor="#0000"
+                app:rpbCornerRadius="20dp"
+                app:rpbProgressColor="@color/primary"
+                app:rpbProgressTextColor="#0000"
+                app:rpbTextPadding="12dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="44dp"
+                app:rpbProgress="0"
+                app:rpbTextSize="0dp" />
+
+            <TextView
+                android:id="@+id/txtBlowValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish"
+                android:text="@string/blow_within_str"
+                android:textColor="@color/grey"
+                android:includeFontPadding="false"
+                android:layout_gravity="center"
+                android:layout_marginTop="56dp"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="23dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_blow_within"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="bottom"
+                android:text="-"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="-3sp"
+                android:textColor="@color/primary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Blow Within"
+                android:textColor="@color/primary"
+                android:includeFontPadding="false"
+                android:layout_marginTop="14dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+<!--    //////////////////////////////////////////////// analysing page-->
+
+    <LinearLayout
+        android:id="@+id/layout_analysing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_weight="1">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"/>
+        
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/greate"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="You did great!"
+            android:textColor="@color/darK_grey"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:textSize="25sp" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="222dp"
+            android:paddingVertical="12dp"
+            android:orientation="vertical"
+            android:background="@drawable/rectangle_rad10"
+            android:backgroundTint="#F0F0F0">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Up Next"
+                android:textColor="@color/darK_grey"
+                android:includeFontPadding="false"
+                android:layout_gravity="center"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Vital Test"
+                android:layout_marginTop="18sp"
+                android:textColor="@color/black"
+                android:includeFontPadding="false"
+                android:layout_gravity="center"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="38dp">
+            <include layout="@layout/analysing_breath_progress_layout"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_analyze_breath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Analyzing your breath"
+            android:textColor="@color/darK_grey"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+
+
+<!--    ////////////////////////////////////////////// textview to display log -->
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        android:background="@color/disabled_light"
+        android:layout_height="250dp"
+        android:gravity="bottom"
+        android:padding="20dp"
+        android:text=""/>
+</LinearLayout>

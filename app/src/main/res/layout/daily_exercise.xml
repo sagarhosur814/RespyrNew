@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E4F0FF"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="@dimen/_30sdp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start">
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/running"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="How many minutes did you exercise ?"
+                android:layout_marginTop="30dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish"
+                android:text="Track your daily routine to keep up with your lifestyle score including insights &amp; suggestions to improve"
+                android:layout_marginTop="10dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@drawable/exc_bg">
+
+            <Button
+                android:id="@+id/button_exc_minus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/minus"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_10sdp"
+                android:src="@drawable/minus"
+                android:text="15 mins"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8sdp" />
+
+            <TextView
+                android:id="@+id/txt_exercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="30 minutes"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:drawablePadding="10dp"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="3dp"
+                android:background="@drawable/eclips1"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                app:drawableStartCompat="@drawable/clock_sm"
+                app:drawableEndCompat="@drawable/running_sm" />
+
+            <Button
+                android:id="@+id/button_exc_add"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="15 mins"
+                android:textSize="@dimen/_8sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:drawableTop="@drawable/add2"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_10sdp"
+                android:src="@drawable/minus"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

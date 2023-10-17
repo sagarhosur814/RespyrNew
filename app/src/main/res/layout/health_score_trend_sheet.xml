@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll_trend_sheet_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="20dp"
+        android:gravity="bottom|right"
+        android:background="@drawable/card_shadow">
+
+        <ImageButton
+            android:id="@+id/button_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/close"
+            android:background="@drawable/eclips1"
+            android:backgroundTint="@color/grey"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRENDS"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/grey"
+                android:includeFontPadding="false"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/txt_data_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/black"
+                android:layout_marginTop="11dp"
+                android:includeFontPadding="false"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:id="@+id/txt_score_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your score is in good range"
+                android:fontFamily="@font/mulish"
+                android:textColor="@color/black"
+                android:layout_marginTop="40dp"
+                android:includeFontPadding="false"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13sp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/score_status_in_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5%"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"
+                    android:textSize="24sp"
+                    app:drawableRightCompat="@drawable/data_up"/>
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/score_status_in_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulish"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/eclips1"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                android:backgroundTint="#F0F0F0"
+                android:padding="5dp">
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="wrap_content"
+                    app:tabTextAppearance="@style/TabTextStyleTrend"
+                    app:tabSelectedTextAppearance="@style/TabTextStyleTrendActive"
+                    app:tabIndicator="@null"
+                    app:tabRippleColor="@android:color/transparent"
+                    app:tabMode="fixed"
+                    app:tabBackground="@drawable/tab_background_selector_trends"
+                    android:layout_height="37dp"/>
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_height="320dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/eclips1"
+                android:backgroundTint="#C7C6CE"
+                android:layout_gravity="center"
+                android:layout_marginTop="27dp"
+                android:padding="1dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:text="Share"
+                    android:background="@drawable/eclips1"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/mulish"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="@color/primary"
+                    android:drawableTint="@color/primary"
+                    android:drawableStart="@drawable/share_sm"
+                    android:paddingHorizontal="11dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

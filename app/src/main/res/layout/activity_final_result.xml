@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/result_page_gradient"
+    android:layout_height="match_parent">
+    <include layout="@layout/result_page_appbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:fontFamily="@font/poppins_medium">
+
+
+
+            <include layout="@layout/result_page_references" />
+
+            <include
+                android:id="@+id/scores"
+                layout="@layout/result_page_scores_in_details" />
+
+            <include
+                android:id="@+id/lifestyle"
+                layout="@layout/result_page_lifestyle" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="17dp"
+                android:paddingVertical="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1px"
+                    android:elevation="2dp"
+                    android:backgroundTint="@color/disabled"
+                    android:background="@drawable/reactangel_rad20">
+                    <include layout="@layout/result_page_health_score1" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

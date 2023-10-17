@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/item_timeline.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+    
+    <View
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:background="#E4F0FF"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="start|center"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/eclips1"
+                    android:backgroundTint="#C7C6CE"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="0dp"/>
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <TextView
+                       android:id="@+id/eventNameTextView"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="12:30pm"
+                       android:textSize="12sp"
+                       android:fontFamily="@font/roboto"
+                       android:layout_marginEnd="8dp" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="20dp"
+                   android:gravity="start|center">
+
+                   <TextView
+                       android:id="@+id/txt_score_value"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginEnd="8dp"
+                       android:fontFamily="@font/roboto_medium"
+                       android:includeFontPadding="false"
+                       android:text="86%"
+                       android:textColor="@color/black"
+                       android:textSize="25sp" />
+
+
+
+                   <TextView
+                       android:id="@+id/txt_score_status"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginEnd="8dp"
+                       android:baselineAligned="false"
+                       android:drawableStart="@drawable/dot_sm"
+                       android:drawablePadding="5dp"
+                       android:fontFamily="@font/mulish_semibold"
+                       android:textSize="12sp"
+                       tools:ignore="UseCompatTextViewDrawableXml" />
+               </LinearLayout>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="20dp"
+                   android:background="#F0F0F0"/>
+           </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/button_view_score"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@color/transparent"
+                android:src="@drawable/right1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

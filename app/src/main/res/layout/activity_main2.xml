@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".notification.Main"
+    tools:ignore="PrivateResource">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="19dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/button_back"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/toolbar_back"
+                        android:background="@color/transparent"/>
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="0dp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Notification"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/black"
+                        tools:ignore="PrivateResource" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <com.aries.ui.view.tab.CommonTabLayout
+                android:id="@+id/notification_tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/transparent"
+                tl:tl_iconVisible="true"
+                app:tl_iconGravity="LEFT"
+                app:tl_iconMargin="10dp"
+                tl:tl_tab_space_equal="true"
+                tl:tl_tab_width="173dp"
+                tl:tl_indicator_margin_left="0dp"
+                tl:tl_indicator_margin_top="0dp"
+                tl:tl_indicator_margin_right="0dp"
+                tl:tl_indicator_margin_bottom="0dp"
+                android:theme="@style/PoppinsFont"
+                app:tl_indicator_corner_radius="10dp"
+                app:tl_iconHeight="30dp"
+                app:tl_textSelectColor="@color/white"
+                app:tl_textUnSelectColor="@color/black"
+                app:tl_indicator_height="48dp"
+                app:tl_indicator_bounce_enable="false"
+                app:tl_iconWidth="@dimen/_16sdp"
+                app:tl_textSize="@dimen/_12sdp"
+                app:tl_textSelectSize="@dimen/_12sdp"
+                app:tl_indicator_color="@color/black"
+                tl:tl_indicator_style="BLOCK"
+                />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_notification"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"  />
+</LinearLayout>

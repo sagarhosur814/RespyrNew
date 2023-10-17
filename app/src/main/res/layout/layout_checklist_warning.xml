@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/checklist_warning_bg"
+        android:gravity="start|bottom"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/warning"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"
+            android:layout_marginTop="19dp"
+            android:text="Warning"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11ssp"
+            android:maxWidth="308dp"
+            android:fontFamily="@font/mulish"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"
+            android:layout_marginTop="19dp"
+            android:text="Your result will be inaccurate due to the following"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingVertical="25dp"
+        android:paddingHorizontal="20dp">
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:numColumns="2"
+            android:horizontalSpacing="8dp"
+            android:verticalSpacing="20dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_list_warning"
+            android:background="@drawable/rectangle_rad10"
+            android:backgroundTint="#E4F0FF"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="12dp"
+            app:drawableStartCompat="@drawable/info"
+            android:drawablePadding="14dp"
+            app:drawableTint="@color/primary"
+            android:fontFamily="@font/mulish"
+            android:textSize="@dimen/_10ssp"
+            android:layout_marginTop="55dp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="1px"
+                android:background="@drawable/eclips1"
+                android:backgroundTint="#535359"
+                android:layout_height="40dp">
+                <Button
+                    android:id="@+id/button_ill_take_later"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/eclips1"
+                    android:backgroundTint="@color/white"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/mulish"
+                    android:text="I’ll Take Later "
+                    android:textAllCaps="false"
+                    android:textColor="#535359"/>
+            </LinearLayout>
+            <Space
+                android:layout_width="24dp"
+                android:layout_height="0dp"/>
+            <Button
+                android:id="@+id/button_continue_anyway"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/eclips1"
+                android:backgroundTint="@color/primary"
+                android:textSize="12sp"
+                android:fontFamily="@font/mulish"
+                android:text="Continue Anyway"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

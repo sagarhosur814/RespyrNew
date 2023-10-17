@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="13dp"
+    android:gravity="center"
+    android:paddingVertical="7dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:src="@drawable/back"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@color/transparent"/>
+    <Space
+        android:layout_width="14dp"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_current_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_7sdp"
+                android:drawablePadding="5dp"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:fontFamily="@font/roboto"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"
+                app:drawableStartCompat="@drawable/cal_sm"
+                tools:ignore="SmallSp" />
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="0dp"/>
+            <TextView
+                android:id="@+id/txt_current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_7sdp"
+                android:drawablePadding="5sp"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:fontFamily="@font/roboto"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"
+                app:drawableStartCompat="@drawable/clock_sm"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageButton
+
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:src="@drawable/share"
+        app:tint="#535359"
+        android:foreground="@drawable/ripple_1"
+        android:background="@drawable/eclips1"/>
+
+
+</LinearLayout>

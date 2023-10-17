@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="20dp"
+    android:layout_marginTop="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="27dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="start|center"
+                android:includeFontPadding="false"
+                android:text="Sleeping\nRoutine"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp"/>
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/sleeping1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/mulish"
+            android:gravity="start|center"
+            android:includeFontPadding="false"
+            android:text="See your weekly trend of your sleep routine here. For an accurate analysis, track everyday."
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:textSize="@dimen/_10ssp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_header_data_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:includeFontPadding="false"
+                    android:text="5%"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:drawableRightCompat="@drawable/data_up"
+                    app:drawableTint="@color/green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/mulish"
+                    android:includeFontPadding="false"
+                    android:text="Than yesterday"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_avg_daily_intake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:includeFontPadding="false"
+                        android:text="45 mins"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/txt_avg_daily_intake_ltr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:includeFontPadding="false"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/mulish"
+                    android:includeFontPadding="false"
+                    android:text="Average water intake\n(Daily)"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.hadiidbouk.charts.ChartProgressBar
+            android:id="@+id/ChartProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:gravity="center"
+            app:hdBarCanBeClick="true"
+            app:hdBarHeight="@dimen/_83sdp"
+            app:hdBarWidth="15dp"
+            app:hdBarRadius="10dp"
+            app:hdMaxValue="10"
+            android:layout_marginTop="41dp"
+            app:hdEmptyColor="@color/light_secondary"
+            app:hdProgressColor="@color/primary"
+            app:hdProgressClickColor="@color/primary"
+            app:hdPinBackgroundColor="@color/light_secondary"
+            app:hdPinTextColor="@color/grey"
+            app:hdPinPaddingBottom="5dp"
+            app:hdBarTitleColor="@color/grey"
+            app:hdBarTitleTxtSize="8sp"
+            app:hdPinTxtSize="8sp"
+            app:hdPinDrawable="@drawable/add"
+            app:hdBarTitleMarginTop="22dp"
+            app:hdProgressDisableColor="@color/grey"
+            app:hdBarTitleSelectedColor="@color/grey"
+            />
+    </LinearLayout>
+
+</LinearLayout>

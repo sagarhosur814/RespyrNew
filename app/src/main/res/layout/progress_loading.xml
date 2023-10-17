@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/ractangel_rad25"
+    android:backgroundTint="@color/white"
+    android:gravity="center">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="57dp"
+        android:layout_height="63dp"
+        android:src="@drawable/loading_logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/darK_grey"/>
+</LinearLayout>

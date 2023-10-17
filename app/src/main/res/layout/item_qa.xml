@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@+id/nested_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_secondary"
+        android:background="@drawable/rectangle_rad10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="?attr/actionBarSize"
+            android:paddingHorizontal="13dp"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/mulish"
+                android:textSize="@dimen/_10ssp"
+                android:includeFontPadding="false"
+                android:text="how switch from one profile to another?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/grey" />
+
+            <ImageButton
+                android:id="@+id/bt_toggle_text"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/arrow_down"
+                app:tint="@color/primary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_expand_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="13dp"
+            android:paddingBottom="26dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/answer_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish"
+                android:textSize="@dimen/_10ssp"
+                android:text="Lorem ipsum dolor sit amet consectetur. Facilisi sagittis tincidunt gravida sagittis laoreet ut risus dictum. Pulvinar arcu nibh velit arcu. Proin arcu tristique cras non. Lorem et pretium lorem senectus urna vel. Hendrerit auctor praesent tellus massa bibendum malesuada maecenas. Etiam leo eu amet adipiscing. Donec dictum adipiscing id imperdiet in nisl ac ut."/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

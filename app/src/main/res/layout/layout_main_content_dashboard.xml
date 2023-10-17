@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <include layout="@layout/layout_dashboard_trend"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_24sdp"/>
+    <include layout="@layout/statistics"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="40dp"/>
+    <include layout="@layout/food_suggestion_based_on_time"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="40dp"/>
+    <include layout="@layout/layout_dashboard_timeline"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="40dp"/>
+    <include layout="@layout/layout_dashboard_adv1"/>
+</LinearLayout>

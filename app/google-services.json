@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "708332474350",
+    "project_id": "respyr-a5ba7",
+    "storage_bucket": "respyr-a5ba7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708332474350:android:96c08de54ef1eaefc288ff",
+        "android_client_info": {
+          "package_name": "com.humorstech.respyr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7hx0FReKziCJVUHfvgmKgcf_xWMSstS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

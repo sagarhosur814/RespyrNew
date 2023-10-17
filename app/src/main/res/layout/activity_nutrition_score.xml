@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".results.NutritionScore">
+    <LinearLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="20dp"
+        android:background="#E4F0FF"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/image_button_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/back"
+            android:background="@color/transparent"
+            app:tint="@color/black"/>
+        <TextView
+            android:id="@+id/txt_app_page_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:text="NUTRITION SCORE"/>
+        <ImageButton
+            android:id="@+id/image_button_share"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/share"
+            android:background="@color/transparent"
+            app:tint="@color/black"/>
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4F0FF"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="24dp"
+                        android:gravity="start|center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Nutrition score is function of your calories, carbs, proteins, fat &amp; fiber intake from food. For an accurate analysis, track everyday."
+                                android:textSize="12sp"
+                                android:fontFamily="@font/mulish"
+                                android:includeFontPadding="false"
+                                android:textColor="@color/grey"/>
+                            <Space
+                                android:layout_width="20dp"
+                                android:layout_height="0dp"/>
+                            <ImageView
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                android:src="@drawable/ic_nutrition"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="20dp"
+                        android:paddingHorizontal="17dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Risk Level"
+                                android:textSize="15sp"
+                                android:layout_marginTop="48dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:includeFontPadding="false"
+                                android:textColor="@color/grey"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="bottom"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="75"
+                                    android:textSize="75dp"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/black"/>
+                                <Space
+                                    android:layout_width="15dp"
+                                    android:layout_height="0dp"/>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="out of 100"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/roboto"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/grey"/>
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/happy_face"
+                                    android:layout_marginBottom="15dp"/>
+                            </LinearLayout>
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/txt_progress_bar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Low Risk"
+                                    android:textSize="12sp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:elevation="2dp"
+                                    android:paddingHorizontal="16dp"
+                                    android:fontFamily="@font/mulish"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/black"/>
+
+                                <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                                    android:id="@+id/diabetic_progress_bar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="48dp"
+                                    android:layout_centerInParent="true"
+                                    app:rpbBackgroundColor="#F0F0F0"
+                                    app:rpbCornerRadius="10dp"
+                                    app:rpbProgressColor="@color/green"
+                                    app:rpbShowProgressText="false" />
+
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/txt_nutrition_score_profile_name"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textSize="18sp"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/black"
+                                    android:text="Shubham,\nYou're Vital Score is"
+                                    android:fontFamily="@font/mulish"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_nutrition_score"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:includeFontPadding="false"
+                                        android:text="85%"
+                                        android:textColor="@color/green"
+                                        android:textSize="40sp" />
+                                    <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                                        android:id="@+id/progress_nutrition_score"
+                                        android:layout_width="98dp"
+                                        android:layout_height="15dp"
+                                        app:rpbBackgroundColor="#F0F0F0"
+                                        app:rpbBackgroundTextColor="#0000"
+                                        app:rpbCornerRadius="20dp"
+                                        app:rpbProgressColor="@color/green"
+                                        app:rpbProgressTextColor="#0000"
+                                        app:rpbTextPadding="12dp"
+                                        android:layout_marginTop="16dp"
+                                        app:rpbProgress="50"
+                                        app:rpbTextSize="0dp" />
+                                </LinearLayout>
+
+
+
+
+
+                                <TextView
+                                    android:id="@+id/txt_nutrition_score_message"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="which is good based on your recommended intake"
+                                    android:fontFamily="@font/mulish"
+                                    android:textColor="@color/grey"
+                                    android:visibility="gone"
+                                    android:drawableTint="@color/grey"
+                                    android:includeFontPadding="false"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="204dp"
+                        android:minHeight="204dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:elevation="1dp"
+                            android:paddingHorizontal="20dp">
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:background="@drawable/eclips1"
+                                android:gravity="center"
+                                android:backgroundTint="@color/white">
+                                <ImageView
+                                    android:id="@+id/img_nutrition_warning"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/diabetic_badge"/>
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+
+                            <Button
+                                android:id="@+id/button_view_trend"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/arrow_right1"
+                                android:fontFamily="@font/mulish"
+                                android:textSize="15sp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:paddingHorizontal="20dp"
+                                android:background="@drawable/eclips1"
+                                android:backgroundTint="@color/primary"
+                                android:drawablePadding="15dp"
+                                android:drawableTint="@color/white"
+                                android:textColor="@color/white"
+                                android:textAllCaps="false"
+                                android:text="@string/view_trend"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="164dp"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="25dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="35dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/txt_nutrition_message"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18sp"
+                                    android:includeFontPadding="false"
+                                    android:text="You are on fire, Shubham!"
+                                    android:gravity="start|center"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/poppins_semibold"/>
+                                <TextView
+                                    android:id="@+id/txt_nutrition_sub_message"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:includeFontPadding="false"
+                                    android:text="Your activity level is exceedingly well. Don’t stop now. Keep at it to enhance your health score."
+                                    android:gravity="start|center"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/mulish"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E4F0FF "/>
+
+
+            <include layout="@layout/result_page_calories"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:includeFontPadding="false"
+                    android:text="Calorie &amp; Macro Trend"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_semibold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Track your daily routine to keep up with your lifestyle score including insights &amp; suggestions to improve"
+                    android:textSize="12sp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/mulish"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/grey"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="#F0F0F0"
+                    android:background="@drawable/rectange_rad15"
+                    android:paddingVertical="20dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="14dp">
+                        <com.skydoves.powerspinner.PowerSpinnerView
+                            android:id="@+id/power_spinner_view"
+                            android:layout_width="133dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/eclips1"
+                            android:backgroundTint="@color/white"
+                            android:gravity="center"
+                            android:hint="Calories"
+                            android:paddingHorizontal="7dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            app:spinner_arrow_padding="0dp"
+                            app:spinner_arrow_tint="@color/black"
+                            app:spinner_divider_show="false"
+                            app:spinner_item_array="@array/questions"
+                            app:spinner_item_height="30dp"
+                            app:spinner_popup_animation="dropdown"
+                            app:spinner_popup_background="@drawable/spinner_item_background"
+                            app:spinner_popup_elevation="14dp" />
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="133dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/eclips1"
+                        android:layout_marginHorizontal="20dp"
+                        android:visibility="gone"
+                        android:paddingHorizontal="14dp"
+                        android:backgroundTint="@color/white">
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/eclips1"
+                            android:backgroundTint="@color/white"
+                            android:layout_height="30dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/arrow_down"
+                            app:tint="@color/black" />
+                    </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:visibility="gone"
+                        android:paddingHorizontal="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/txt_total_nutri"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1080 cal"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:includeFontPadding="false"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total (Weekly)"
+                                android:textSize="12sp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/mulish"
+                                android:includeFontPadding="false"
+                                android:textColor="@color/grey"/>
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="35dp"
+                            android:layout_height="0dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/txt_avg_nutri"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="60 cal"
+                                    android:textSize="20sp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Average (Daily)"
+                                android:textSize="12sp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/mulish"
+                                android:includeFontPadding="false"
+                                android:textColor="@color/grey"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="30dp"
+                        android:paddingHorizontal="5dp">
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barChart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

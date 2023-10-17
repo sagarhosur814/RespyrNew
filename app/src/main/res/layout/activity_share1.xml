@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/result_page_gradient"
+    app:fontFamily="@font/poppins_medium"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_13sdp"
+        android:paddingVertical="@dimen/_13sdp"
+        android:id="@+id/main_layout"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/respyr_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_18sdp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/primary"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:includeFontPadding="false"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_current_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_8ssp"
+                    android:drawablePadding="5dp"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:text="Wed, 12 Aug 2022"
+                    android:fontFamily="@font/roboto"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/grey"
+                    app:drawableStartCompat="@drawable/cal_sm"
+                    tools:ignore="SmallSp" />
+                <Space
+                    android:layout_width="15dp"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/txt_current_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_8ssp"
+                    android:drawablePadding="5sp"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:text="12:04pm"
+                    android:fontFamily="@font/roboto"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/grey"
+                    app:drawableStartCompat="@drawable/clock_sm"
+                    tools:ignore="SmallSp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="293dp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:minHeight="293dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="232dp"
+                        android:minHeight="232dp"
+                        android:maxHeight="232dp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1.5">
+
+                            <LinearLayout
+                                android:id="@+id/card_lungs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minWidth="120dp"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:gravity="start|center">
+
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_26sdp"
+                                            android:layout_height="@dimen/_26sdp"
+                                            android:src="@drawable/anatomy"
+                                            android:padding="5dp"
+                                            android:background="@drawable/rectangle_rad10"
+                                            android:backgroundTint="@color/white"/>
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="0dp"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Respiratory \nScore"
+                                            android:textAllCaps="false"
+                                            android:textSize="@dimen/_10ssp"
+                                            android:fontFamily="@font/poppins_semibold"
+                                            android:textColor="@color/black"
+                                            android:includeFontPadding="false"
+                                            />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="start">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:id="@+id/txt_lungs_score"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="0%"
+                                                android:textAllCaps="false"
+                                                android:textSize="@dimen/_13sdp"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:textColor="#EA5455"
+                                                android:includeFontPadding="false"
+                                                />
+                                            <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                                                android:id="@+id/progress_lungs"
+                                                android:layout_width="35dp"
+                                                android:layout_height="5dp"
+                                                app:rpbBackgroundColor="@color/disabled"
+                                                app:rpbBackgroundTextColor="#0000"
+                                                app:rpbCornerRadius="20dp"
+                                                app:rpbProgressColor="#EA5455"
+                                                app:rpbProgressTextColor="#0000"
+                                                app:rpbTextPadding="12dp"
+                                                android:layout_marginTop="10dp"
+                                                app:rpbProgress="0"
+                                                app:rpbTextSize="0dp" />
+                                        </LinearLayout>
+
+
+
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="0dp"/>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:id="@+id/txt_lungs_status"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Good!"
+                                                android:textAllCaps="false"
+                                                android:textSize="@dimen/_9ssp"
+                                                android:fontFamily="@font/mulish_bold"
+                                                android:textColor="#EA5455"
+                                                android:includeFontPadding="false"
+                                                />
+                                            <TextView
+                                                android:maxWidth="70dp"
+                                                android:id="@+id/txt_lungs_message"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Everything looks good!"
+                                                android:textAllCaps="false"
+                                                android:textSize="@dimen/_7ssp"
+                                                android:layout_marginTop="3dp"
+                                                android:fontFamily="@font/mulish_semibold"
+                                                android:textColor="@color/darK_grey"
+                                                android:includeFontPadding="false"/>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"/>
+
+
+                            <LinearLayout
+                                android:id="@+id/card_liver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minWidth="120dp"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:gravity="start|center">
+
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_26sdp"
+                                            android:layout_height="@dimen/_26sdp"
+                                            android:src="@drawable/liver2"
+                                            android:padding="5dp"
+                                            android:background="@drawable/rectangle_rad10"
+                                            android:backgroundTint="@color/white"/>
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="0dp"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Liver\nScore"
+                                            android:textAllCaps="false"
+                                            android:textSize="@dimen/_10ssp"
+                                            android:fontFamily="@font/poppins_semibold"
+                                            android:textColor="@color/black"
+                                            android:includeFontPadding="false"
+                                            />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="start">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:id="@+id/txt_liver_score"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="0%"
+                                                android:textAllCaps="false"
+                                                android:textSize="@dimen/_13sdp"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:textColor="#EA5455"
+                                                android:includeFontPadding="false"
+                                                />
+                                            <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                                                android:id="@+id/progress_liver"
+                                                android:layout_width="35dp"
+                                                android:layout_height="5dp"
+                                                app:rpbBackgroundColor="@color/disabled"
+                                                app:rpbBackgroundTextColor="#0000"
+                                                app:rpbCornerRadius="20dp"
+                                                app:rpbProgressColor="#EA5455"
+                                                app:rpbProgressTextColor="#0000"
+                                                app:rpbTextPadding="12dp"
+                                                android:layout_marginTop="10dp"
+                                                app:rpbProgress="0"
+                                                app:rpbTextSize="0dp" />
+                                        </LinearLayout>
+
+
+
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="0dp"/>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:id="@+id/txt_liver_status"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Good!"
+                                                android:textAllCaps="false"
+                                                android:textSize="@dimen/_9ssp"
+                                                android:fontFamily="@font/mulish_bold"
+                                                android:textColor="#EA5455"
+                                                android:includeFontPadding="false"
+                                                />
+                                            <TextView
+                                                android:maxWidth="70dp"
+                                                android:id="@+id/txt_liver_message"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Everything looks good!"
+                                                android:textAllCaps="false"
+                                                android:textSize="@dimen/_7ssp"
+                                                android:layout_marginTop="3dp"
+                                                android:fontFamily="@font/mulish_semibold"
+                                                android:textColor="@color/darK_grey"
+                                                android:includeFontPadding="false"/>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="0dp"/>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="right"
+                            android:layout_weight="1.5">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:id="@+id/card_vital"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:gravity="start|center">
+
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_26sdp"
+                                            android:layout_height="@dimen/_26sdp"
+                                            android:src="@drawable/heart1"
+                                            android:padding="5dp"
+                                            android:background="@drawable/rectangle_rad10"
+                                            android:backgroundTint="@color/white"/>
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="0dp"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Vital\nScore"
+                                            android:textAllCaps="false"
+                                            android:textSize="@dimen/_10ssp"
+                                            android:fontFamily="@font/poppins_semibold"
+                                            android:textColor="@color/black"
+                                            android:includeFontPadding="false"
+                                            />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="start">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:id="@+id/txt_vital_score"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="0%"
+                                                android:textAllCaps="false"
+                                                android:textSize="@dimen/_13sdp"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:textColor="#EA5455"
+                                                android:includeFontPadding="false"
+                                                />
+                                            <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                                                android:id="@+id/progress_vitals"
+                                                android:layout_width="35dp"
+                                                android:layout_height="5dp"
+                                                app:rpbBackgroundColor="@color/disabled"
+                                                app:rpbBackgroundTextColor="#0000"
+                                                app:rpbCornerRadius="20dp"
+                                                app:rpbProgressColor="#EA5455"
+                                                app:rpbProgressTextColor="#0000"
+                                                app:rpbTextPadding="12dp"
+                                                android:layout_marginTop="10dp"
+                                                app:rpbProgress="0"
+                                                app:rpbTextSize="0dp" />
+                                        </LinearLayout>
+
+
+
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="0dp"/>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:id="@+id/txt_vitals_status"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Good!"
+                                                android:textAllCaps="false"
+                                                android:textSize="@dimen/_9ssp"
+                                                tools:ignore="SmallSp"
+                                                android:fontFamily="@font/mulish_bold"
+                                                android:textColor="#EA5455"
+                                                android:includeFontPadding="false"
+                                                />
+                                            <TextView
+                                                android:maxWidth="70dp"
+                                                android:id="@+id/txt_vitals_message"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Come back in a week"
+                                                android:textAllCaps="false"
+                                                android:textSize="@dimen/_7ssp"
+                                                android:layout_marginTop="3dp"
+                                                android:fontFamily="@font/mulish_semibold"
+                                                android:textColor="@color/darK_grey"
+                                                android:includeFontPadding="false"
+                                                tools:ignore="SmallSp" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:id="@+id/card_diabetic"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:gravity="start|center">
+
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_26sdp"
+                                            android:layout_height="@dimen/_26sdp"
+                                            android:src="@drawable/pancreas_sm"
+                                            android:padding="5dp"
+                                            android:background="@drawable/rectangle_rad10"
+                                            android:backgroundTint="@color/white"/>
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="0dp"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Diabetic\nScore"
+                                            android:textAllCaps="false"
+                                            android:textSize="@dimen/_10ssp"
+                                            android:fontFamily="@font/poppins_semibold"
+                                            android:textColor="@color/black"
+                                            android:includeFontPadding="false"
+                                            />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="top|center">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:id="@+id/txt_diabetic_score"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="0%"
+                                                android:textAllCaps="false"
+                                                android:textSize="@dimen/_13sdp"
+                                                android:fontFamily="@font/roboto_bold"
+                                                android:textColor="#EA5455"
+                                                android:includeFontPadding="false"
+                                                />
+                                            <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                                                android:id="@+id/progress_diabetic"
+                                                android:layout_width="35dp"
+                                                android:layout_height="5dp"
+                                                app:rpbBackgroundColor="@color/disabled"
+                                                app:rpbBackgroundTextColor="#0000"
+                                                app:rpbCornerRadius="20dp"
+                                                app:rpbProgressColor="#EA5455"
+                                                app:rpbProgressTextColor="#0000"
+                                                app:rpbTextPadding="12dp"
+                                                android:layout_marginTop="10dp"
+                                                app:rpbProgress="0"
+                                                app:rpbTextSize="0dp" />
+                                        </LinearLayout>
+
+
+
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="0dp"/>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+                                            <TextView
+                                                android:id="@+id/txt_diabetic_status"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Poor"
+                                                android:textAllCaps="false"
+                                                android:textSize="@dimen/_9ssp"
+                                                tools:ignore="SmallSp"
+                                                android:fontFamily="@font/mulish_bold"
+                                                android:textColor="#EA5455"
+                                                android:includeFontPadding="false"
+                                                />
+                                            <TextView
+                                                android:maxWidth="70dp"
+                                                android:id="@+id/txt_diabetic_message"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Everything looks good!"
+                                                android:textAllCaps="false"
+                                                android:textSize="@dimen/_7ssp"
+                                                tools:ignore="SmallSp"
+                                                android:layout_marginTop="3dp"
+                                                android:fontFamily="@font/mulish_semibold"
+                                                android:textColor="@color/darK_grey"
+                                                android:includeFontPadding="false"
+                                                />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="293dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/inner_human" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="1"
+                        android:background="#D9D9D9"/>
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+                    <TextView
+                        android:id="@+id/result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lifestyle"
+                        android:textAllCaps="true"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="#535359"
+                        android:includeFontPadding="false"
+                        />
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="1"
+                        android:background="#D9D9D9"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/card_nutrition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="start|center">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/_26sdp"
+                                    android:layout_height="@dimen/_26sdp"
+                                    android:src="@drawable/cereal"
+                                    android:padding="5dp"
+                                    android:background="@drawable/rectangle_rad10"
+                                    android:backgroundTint="@color/white"/>
+                                <Space
+                                    android:layout_width="10dp"
+                                    android:layout_height="0dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nutrition\nScore"
+                                    android:textAllCaps="false"
+                                    android:textSize="@dimen/_10ssp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:textColor="@color/black"
+                                    android:includeFontPadding="false"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:gravity="start|top">
+
+                                <LinearLayout
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/txt_nutrition_score"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0%"
+                                        android:textAllCaps="false"
+                                        android:textSize="20sp"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="#EA5455"
+                                        android:includeFontPadding="false"
+                                        />
+                                    <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                                        android:id="@+id/progress_nutrition"
+                                        android:layout_width="35dp"
+                                        android:layout_height="5dp"
+                                        app:rpbBackgroundColor="@color/disabled"
+                                        app:rpbBackgroundTextColor="#0000"
+                                        app:rpbCornerRadius="20dp"
+                                        app:rpbProgressColor="#EA5455"
+                                        app:rpbProgressTextColor="#0000"
+                                        app:rpbTextPadding="12dp"
+                                        android:layout_marginTop="10dp"
+                                        app:rpbProgress="50"
+                                        app:rpbTextSize="0dp" />
+                                </LinearLayout>
+
+
+
+                                <Space
+                                    android:layout_width="10dp"
+                                    android:layout_height="0dp"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/txt_nutrition_status"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Good!"
+                                        android:textAllCaps="false"
+                                        android:textSize="@dimen/_9ssp"
+                                        android:fontFamily="@font/mulish_bold"
+                                        android:textColor="#EA5455"
+                                        android:includeFontPadding="false"
+                                        tools:ignore="SmallSp" />
+                                    <TextView
+                                        android:id="@+id/txt_nutrition_message"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Focus on food!"
+                                        android:textAllCaps="false"
+                                        android:textSize="@dimen/_7ssp"
+                                        android:layout_marginTop="3dp"
+                                        tools:ignore="SmallSp"
+                                        android:fontFamily="@font/mulish_semibold"
+                                        android:textColor="@color/darK_grey"
+                                        android:includeFontPadding="false"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+                    <LinearLayout
+                        android:id="@+id/card_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="start|center">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/_26sdp"
+                                    android:layout_height="@dimen/_26sdp"
+                                    android:src="@drawable/running1"
+                                    android:padding="5dp"
+                                    android:background="@drawable/rectangle_rad10"
+                                    android:backgroundTint="@color/white"/>
+                                <Space
+                                    android:layout_width="10dp"
+                                    android:layout_height="0dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:includeFontPadding="false"
+                                    android:text="Activity\nScore"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_10ssp"
+                                    />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:gravity="start|top">
+
+                                <LinearLayout
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/txt_activity_score"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0%"
+                                        android:textAllCaps="false"
+                                        android:textSize="20sp"
+                                        android:fontFamily="@font/roboto_bold"
+                                        android:textColor="#EA5455"
+                                        android:includeFontPadding="false"
+                                        />
+                                    <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                                        android:id="@+id/progress_activity"
+                                        android:layout_width="35dp"
+                                        android:layout_height="5dp"
+                                        app:rpbBackgroundColor="@color/disabled"
+                                        app:rpbBackgroundTextColor="#0000"
+                                        app:rpbCornerRadius="20dp"
+                                        app:rpbProgressColor="#EA5455"
+                                        app:rpbProgressTextColor="#0000"
+                                        app:rpbTextPadding="12dp"
+                                        android:layout_marginTop="10dp"
+                                        app:rpbProgress="50"
+                                        app:rpbTextSize="0dp" />
+                                </LinearLayout>
+
+
+
+                                <Space
+                                    android:layout_width="10dp"
+                                    android:layout_height="0dp"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/txt_activity_status"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Good!"
+                                        android:textAllCaps="false"
+                                        tools:ignore="SmallSp"
+                                        android:textSize="@dimen/_9ssp"
+                                        android:fontFamily="@font/mulish_bold"
+                                        android:textColor="#EA5455"
+                                        android:includeFontPadding="false"
+                                        />
+                                    <TextView
+                                        android:id="@+id/txt_activity_message"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Focus on food!"
+                                        android:textAllCaps="false"
+                                        android:textSize="@dimen/_7ssp"
+                                        android:layout_marginTop="3dp"
+                                        tools:ignore="SmallSp"
+                                        android:fontFamily="@font/mulish_semibold"
+                                        android:textColor="@color/darK_grey"
+                                        android:includeFontPadding="false"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/reactangel_rad20"
+                android:backgroundTint="@color/disabled"
+                android:elevation="2dp"
+                android:orientation="vertical"
+                android:padding="1px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/reactangel_rad20"
+                    android:backgroundTint="@color/white"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_13sdp"
+                    android:paddingVertical="@dimen/_24sdp"
+                    android:elevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center">
+
+                        <TextView
+                            android:id="@+id/txt_profile_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mulish"
+                            android:includeFontPadding="false"
+                            android:text="Shubham, \nYour Overall Health Score is"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_overall_health_score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_bold"
+                                android:includeFontPadding="false"
+                                android:text="59%"
+                                android:textAllCaps="false"
+                                android:textColor="#EA5455"
+                                android:textSize="@dimen/_25ssp" />
+
+                            <com.mackhartley.roundedprogressbar.RoundedProgressBar
+                                android:id="@+id/progress_overall_health_score"
+                                app:rpbBackgroundColor="#F0F0F0"
+                                app:rpbBackgroundTextColor="#0000"
+                                app:rpbCornerRadius="@dimen/_20sdp"
+                                app:rpbProgress="50"
+                                app:rpbProgressColor="#EA5455"
+                                app:rpbProgressTextColor="#0000"
+                                app:rpbTextPadding="12dp"
+                                app:rpbTextSize="0dp"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="start">
+
+                        <RelativeLayout
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:elevation="2dp"
+                                android:src="@drawable/users1" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:layout_centerHorizontal="true"
+                                android:elevation="1dp"
+                                android:src="@drawable/user2" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_24sdp"
+                                android:layout_height="@dimen/_24sdp"
+                                android:layout_alignParentEnd="true"
+                                android:elevation="0dp"
+                                android:src="@drawable/user3" />
+
+                        </RelativeLayout>
+
+                        <Space
+                            android:layout_width="15dp"
+                            android:layout_height="0dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mulish"
+                                android:includeFontPadding="false"
+                                android:maxWidth="280dp"
+                                android:text="Great! Your score is better than 59% of other users"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/_8ssp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mulish"
+                    android:includeFontPadding="false"
+                    android:text="Download the respyr app\nNOW!"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/playstore"
+                    android:scaleType="fitEnd"
+                    android:layout_height="@dimen/_18sdp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

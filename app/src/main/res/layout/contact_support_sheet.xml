@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bottom_sheet_shape"
+    android:layout_height="match_parent"
+    android:paddingVertical="32dp"
+    android:backgroundTint="@color/white"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:paddingHorizontal="18dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Support Via"
+        android:fontFamily="@font/mulish_semibold"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:includeFontPadding="false"
+        android:textColor="@color/primary"/>
+    <LinearLayout
+        android:id="@+id/button_open_whatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@drawable/eclips1"
+        android:padding="1px"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/primary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/eclips1"
+            android:gravity="center"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/whatsaap"
+                android:fontFamily="@font/mulish"
+                android:textSize="15sp"
+                android:textColor="#535359"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="WhatsApp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/button_open_email"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@drawable/eclips1"
+        android:padding="1px"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/primary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/eclips1"
+            android:gravity="center"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/email"
+                android:fontFamily="@font/mulish"
+                android:textSize="15sp"
+                android:textColor="#535359"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="E-mail"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

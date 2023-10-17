@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".reading.DeviceReady">
+    <include layout="@layout/reading_appbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:paddingHorizontal="20dp"
+        android:gravity="center"
+        android:paddingVertical="90dp"
+        android:orientation="vertical"
+        tools:ignore="PrivateResource">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/img_image_status"
+            android:layout_width="match_parent"
+            android:layout_height="346dp"
+            android:src="@drawable/cal1"/>
+
+        <TextView
+            android:id="@+id/txt_device_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:textColor="@color/grey"
+            android:layout_marginTop="30dp"
+            android:text="Cleaning Inner Chamber of Device"/>
+
+
+        <include layout="@layout/device_calibration_progress"/>
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/txt_log"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/grey"
+        android:text="0"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:gravity="bottom"/>
+</LinearLayout>
