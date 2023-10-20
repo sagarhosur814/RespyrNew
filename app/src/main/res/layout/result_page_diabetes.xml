@@ -11,7 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rectange_rad15"
-        android:backgroundTint="#E4F0FF"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,7 +47,47 @@
                 android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/mulish"
                 android:includeFontPadding="false"
+                android:layout_marginBottom="12dp"
                 android:textColor="@color/grey"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_margin="6dp"
+            android:background="#fff3e8"
+            android:paddingHorizontal="18dp">
+            <View
+                android:id="@+id/ellipse_547"
+                android:layout_width="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/ellipse_orange"
+                android:layout_marginEnd="7dp"
+                />
+            <TextView
+                android:id="@+id/this_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This result may lack accuracy due to \n unmet criteria"
+                android:textSize="12dp"
+                android:textColor="#FE8415"
+                android:gravity="top" />
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:text="Know more"
+                android:textSize="12sp"
+                android:fontFamily="@font/mulish"
+                android:includeFontPadding="false"
+                android:textColor="#308BF9"/>
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -139,7 +178,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginTop="17dp"
                 android:gravity="start">
                 <LinearLayout
                     android:layout_width="0dp"
@@ -150,7 +189,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textSize="@dimen/_13sdp"
+                        android:textSize="20sp"
                         android:includeFontPadding="false"
                         android:textColor="@color/black"
                         android:text="Shubham,\nYou're Vital Score is"
@@ -171,7 +210,7 @@
                             android:id="@+id/txt_diabetic_score"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/roboto_bold"
+                            android:fontFamily="@font/roboto"
                             android:includeFontPadding="false"
                             android:text="85%"
                             android:textColor="@color/green"
@@ -249,11 +288,10 @@
                     android:drawableEnd="@drawable/arrow_right1"
                     android:fontFamily="@font/mulish"
                     android:textSize="15sp"
+                    android:background="@drawable/buttton_gradient_background"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:paddingHorizontal="20dp"
-                    android:background="@drawable/eclips1"
-                    android:backgroundTint="@color/primary"
                     android:drawablePadding="15dp"
                     android:drawableTint="@color/white"
                     android:textColor="@color/white"

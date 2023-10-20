@@ -32,11 +32,7 @@
         <activity
             android:name=".daily_routine.SelectFoodType"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".trends.ViewScore2"
@@ -52,7 +48,13 @@
             android:exported="true" />
         <activity
             android:name=".results.CompleteAnalysis"
-            android:exported="true" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".authentication.profile_creation.lifestyle.Exercise"
             android:exported="false" />

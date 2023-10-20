@@ -4,11 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#E4F0FF"
+    android:background="#FFFFFF"
     android:paddingHorizontal="@dimen/_13sdp"
     android:paddingTop="@dimen/_28sdp"
     android:paddingBottom="@dimen/_10sdp"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,7 +43,7 @@
                 android:text="59%"
                 android:textAllCaps="false"
                 android:textSize="@dimen/_32sdp"
-                android:fontFamily="@font/roboto_bold"
+                android:fontFamily="@font/roboto"
                 android:textColor="#EA5455"
                 android:includeFontPadding="false"
                 />
@@ -82,63 +83,70 @@
             android:layout_alignParentTop="true"
             android:layout_marginHorizontal="@dimen/_24sdp"
             android:paddingHorizontal="20dp"
-            android:background="@drawable/eclips1"
-            android:backgroundTint="@color/primary"
+            android:background="@drawable/buttton_gradient_background"
             android:drawablePadding="15dp"
             android:drawableTint="@color/white"
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:text="@string/view_trend"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_height="1dp"
+            android:background="#e4f0ff"
+            android:layout_marginTop="22dp"
+            />
+
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_65sdp"
+            android:layout_width="336dp"
+            android:layout_height="50dp"
             android:gravity="center"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:background="@drawable/reactangel_rad20"
-            android:backgroundTint="@color/white"
+            android:background="#fff3e8"
             android:paddingHorizontal="18dp">
-            <RelativeLayout
-                android:layout_width="72dp"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:elevation="2dp"
-                    android:src="@drawable/users1"/>
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:elevation="1dp"
-                    android:layout_centerHorizontal="true"
-                    android:src="@drawable/user2"/>
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_alignParentEnd="true"
-                    android:elevation="0dp"
-                    android:src="@drawable/user3"/>
+            <View
+                android:id="@+id/ellipse_547"
+                android:layout_width="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/ellipse_orange"
+                android:layout_marginEnd="7dp"
+                />
+            <TextView
+                android:id="@+id/this_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This result may lack accuracy due to \n unmet criteria"
+                android:textSize="12dp"
+                android:textColor="#FE8415"
+                android:gravity="top" />
 
-            </RelativeLayout>
             <Space
                 android:layout_width="15dp"
                 android:layout_height="0dp"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="textStart"
-                    android:text="Great! Your score is better than 59% of other users"
+                    android:text="Know more"
                     android:textSize="12sp"
                     android:fontFamily="@font/mulish"
                     android:includeFontPadding="false"
-                    android:textColor="@color/grey"/>
-            </LinearLayout>
+                    android:textColor="#308BF9"/>
+
         </LinearLayout>
     </RelativeLayout>
 
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_height="1dp"
+        android:background="#E4F0FF"
+        android:layout_marginTop="22dp"
+        />
 
 </LinearLayout>

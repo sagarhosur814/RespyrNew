@@ -93,16 +93,16 @@ public class CompleteAnalysis extends AppCompatActivity {
 
         SharedPreferences sharedPreferences = getSharedPreferences(ActiveResultData.TITLE, Context.MODE_PRIVATE);
         //////////////////////// Main Scores
-        String profileName = sharedPreferences.getString(ActiveResultData.PROFILE_NAME, null);
-        String finalOverallHealthScoreStr = sharedPreferences.getString(ActiveResultData.OVERALL_HEALTH_SCORE, null);
-        String finalDiabeticScoreStr = sharedPreferences.getString(ActiveResultData.DIABETIC_SCORE, null);
-        String finalVitalScoreStr = sharedPreferences.getString(ActiveResultData.VITAL_SCORE, null);
-        String finalRespiratoryScoreStr = sharedPreferences.getString(ActiveResultData.RESPIRATORY_SCORE, null);
-        String finalLiverScoreStr = sharedPreferences.getString(ActiveResultData.LIVER_SCORE, null);
-        String finalActivityScoreStr = sharedPreferences.getString(ActiveResultData.ACTIVITY_SCORE, null);
-        String finalNutritionScoreStr = sharedPreferences.getString(ActiveResultData.NUTRITION_SCORE, null);
-        resultDate = sharedPreferences.getString(ActiveResultData.DATE, null);
-        resultTime = sharedPreferences.getString(ActiveResultData.TIME, null);
+        String profileName = sharedPreferences.getString(ActiveResultData.PROFILE_NAME, "Ujjwal");
+        String finalOverallHealthScoreStr = sharedPreferences.getString(ActiveResultData.OVERALL_HEALTH_SCORE, "90");
+        String finalDiabeticScoreStr = sharedPreferences.getString(ActiveResultData.DIABETIC_SCORE, "90");
+        String finalVitalScoreStr = sharedPreferences.getString(ActiveResultData.VITAL_SCORE, "10");
+        String finalRespiratoryScoreStr = sharedPreferences.getString(ActiveResultData.RESPIRATORY_SCORE, "10");
+        String finalLiverScoreStr = sharedPreferences.getString(ActiveResultData.LIVER_SCORE, "10");
+        String finalActivityScoreStr = sharedPreferences.getString(ActiveResultData.ACTIVITY_SCORE, "10");
+        String finalNutritionScoreStr = sharedPreferences.getString(ActiveResultData.NUTRITION_SCORE, "10");
+        resultDate = sharedPreferences.getString(ActiveResultData.DATE, "Ujjwal");
+        resultTime = sharedPreferences.getString(ActiveResultData.TIME, "Ujjwal");
 
 
         double finalOverallHealthScore = Double.parseDouble(finalOverallHealthScoreStr);
@@ -608,9 +608,9 @@ public class CompleteAnalysis extends AppCompatActivity {
         ScrollingPagerIndicator indicator =findViewById(R.id.indicator);
 
         SharedPreferences preferences = getApplicationContext().getSharedPreferences(ActiveResultData.TITLE, MODE_PRIVATE);
-        String breakfastSuggestions = preferences.getString(ActiveResultData.BREAKFAST_SUGGESTION, null);
-        String lunchSuggestions = preferences.getString(ActiveResultData.LUNCH_SUGGESTION, null);
-        String dinnerSuggestions = preferences.getString(ActiveResultData.DINNER_SUGGESTION, null);
+        String breakfastSuggestions = preferences.getString(ActiveResultData.BREAKFAST_SUGGESTION, "ujjwal");
+        String lunchSuggestions = preferences.getString(ActiveResultData.LUNCH_SUGGESTION, "ujjwal");
+        String dinnerSuggestions = preferences.getString(ActiveResultData.DINNER_SUGGESTION, "ujjwal");
 
 
 
