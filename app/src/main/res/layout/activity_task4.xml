@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.humorstech.activity_task4">
+  
+
+
+
+  <ImageView
+      android:id="@+id/imageView5"
+      android:layout_width="700dp"
+      android:translationX="-100dp"
+      android:translationY="-450dp"
+      android:layout_height="1000dp"
+      app:srcCompat="@drawable/rectangle_background_image"/>
+
+
+  <LinearLayout
+      android:id="@+id/rectangle_4"
+      android:layout_width="match_parent"
+      android:layout_height="500dp"
+      android:orientation="vertical"
+      android:translationY="-590dp"
+      android:background="#308BF9">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+      <ImageView
+          android:id="@+id/logo_respyr"
+          android:layout_width="70dp"
+          android:layout_height="27dp"
+          android:layout_marginTop="10dp"
+          android:translationY="-410dp"
+          android:elevation="13dp"
+          android:src="@drawable/respyr_logo_2"
+          />
+
+
+      <TextView
+          android:id="@+id/textview_heading1"
+          android:layout_width="wrap_content"
+          android:layout_height="100dp"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="450dp"
+          android:fontFamily="@font/poppins_semibold"
+          android:gravity="top"
+          android:text="Take your first step "
+          android:textColor="#0B4081"
+          android:textSize="25sp"
+          android:translationY="-420dp" />
+      <TextView
+          android:id="@+id/textview_heading5"
+          android:layout_width="324dp"
+          android:translationY="-120dp"
+          android:layout_height="152dp"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginLeft="12dp"
+          android:layout_marginTop="184dp"
+          android:fontFamily="@font/poppins_semibold"
+          android:gravity="top"
+          android:text="toward a"
+          android:textColor="#0B4081"
+          android:textSize="25sp"
+          android:translationX="15dp"/>
+
+      <TextView
+          android:id="@+id/textview_heading2"
+          android:layout_width="324dp"
+          android:translationY="-120dp"
+          android:layout_height="152dp"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginLeft="12dp"
+          android:layout_marginTop="184dp"
+          android:fontFamily="@font/poppins_semibold"
+          android:gravity="top"
+          android:text="better health"
+          android:textColor="@color/white"
+          android:textSize="25sp"
+          android:translationX="135dp"/>
+
+      <TextView
+          android:id="@+id/textview_heading3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:translationY="-350dp"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="20dp"
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="450dp"
+          android:textColor="@color/white"
+          android:textSize="25sp"
+          android:fontFamily="@font/poppins_semibold"
+          android:text=" and lifestyle with respyr."
+          android:gravity="top"
+          />
+      <TextView
+          android:id="@+id/textview_heading4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:translationY="-310dp"
+          android:layout_alignParentLeft="true"
+          android:layout_marginLeft="20dp"
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="450dp"
+          android:textColor="#0B4081"
+          android:textSize="25sp"
+          android:fontFamily="@font/poppins_semibold"
+          android:text="Let’s go!"
+          android:gravity="top"
+          />
+
+      <Button
+          android:layout_width="match_parent"
+          android:background="@drawable/rectange_35"
+          android:backgroundTint="@color/black"
+          android:layout_height="wrap_content"
+          android:padding="20dp"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:id="@+id/signup_login_btn"
+          android:textSize="15sp"
+          android:translationY="190dp"
+          android:fontFamily="@font/mulish"
+          android:textColor="@color/white"
+          android:text="Continue Signup / Login"/>
+      <Button
+          android:layout_width="match_parent"
+          android:background="@drawable/rectangular_border"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:padding="20dp"
+          android:layout_height="wrap_content"
+          android:translationY="260dp"
+          android:id="@+id/Try_Demo_btn"
+          android:textSize="17sp"
+          android:fontFamily="@font/mulish"
+          android:textColor="@color/white"
+          android:text="Try Demo"/>
+    </RelativeLayout>
+
+
+
+
+
+
+  </LinearLayout>
+</LinearLayout>
