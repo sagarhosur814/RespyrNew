@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -28,9 +28,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Respyr"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31" >
+        tools:targetApi="31">
         <activity
-            android:name="com.humorstech.activity_task4"
+            android:name=".Activity_task4"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,9 +39,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".daily_routine.SelectFoodType"
-            android:exported="true" >
+            android:name="com.humorstech.activity_task4"
+            android:exported="true">
         </activity>
+        <activity
+            android:name=".daily_routine.SelectFoodType"
+            android:exported="true"></activity>
         <activity
             android:name=".trends.ViewScore2"
             android:exported="true" />
@@ -56,9 +59,7 @@
             android:exported="true" />
         <activity
             android:name=".results.CompleteAnalysis"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".authentication.profile_creation.lifestyle.Exercise"
             android:exported="false" />
@@ -100,7 +101,7 @@
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
-            android:grantUriPermissions="true" >
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
@@ -177,8 +178,7 @@
             android:exported="true" />
         <activity
             android:name=".daily_routine.SearchMeal"
-            android:exported="true" >
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".daily_routine.DailyRoutinForm"
             android:exported="true" />
@@ -328,7 +328,7 @@
 
         <service
             android:name=".MyFirebaseMessagingService"
-            android:exported="false" >
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
@@ -336,7 +336,7 @@
 
         <receiver
             android:name=".NetworkChangeReceiver"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -346,7 +346,7 @@
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.humorstech.respyr.fileprovider"
             android:exported="false"
-            android:grantUriPermissions="true" >
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
